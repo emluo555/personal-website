@@ -3,6 +3,10 @@ import { React, useLayoutEffect, useRef } from "react"
 import styles from './Mainpage.module.css';
 import gsap from 'gsap';
 import { TextPlugin } from "gsap/TextPlugin";
+import Spline from '@splinetool/react-spline/next';
+import dynamic from 'next/dynamic';
+//const Spline = dynamic(() => import('@splinetool/react-spline'), { ssr: false });
+
 
 
 
@@ -23,7 +27,11 @@ const Mainpage =()=>{
                 opacity: 0,
                 y: "+=300",
                 duration:1,
-              },0.2).from(["#title-3"],{
+              },0.2).from(["#splineview"], {
+                opacity: 0,
+                duration:2,
+              },0.2).
+              from(["#title-3"],{
                 opacity: 0,
                 y: "+=100",
                 duration:1,},1.5
@@ -57,7 +65,12 @@ const Mainpage =()=>{
             <div className={styles.text}>
                 <h2 id="title-1">Hi! My name is</h2>
                 <h1 id="title-2">Emily Luo</h1>
-                <span id="title-3" style={{ display: "flex", justifyContent: "center", width:"150%" }}><h3 >I am </h3><h3 id="animated-text" style={{marginLeft:"1%"}}></h3><h3 id="cursor">_</h3></span>
+                <span id="title-3" style={{ display: "flex", width:"150%" }}><h3 >I am </h3><h3 id="animated-text" style={{marginLeft:"1%"}}></h3><h3 id="cursor">_</h3></span>
+            </div>
+            <div className={styles.splineContainer}id="splineview" >
+            
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
+            <spline-viewer url="https://prod.spline.design/T82Ey2dKkszDLQGS/scene.splinecode"></spline-viewer> 
             </div>
         </div>
     )
