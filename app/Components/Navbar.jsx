@@ -1,13 +1,27 @@
 "use client"
 import { Link } from 'react-scroll';
-import React, { useEffect, useState } from 'react';
 import styles from './Navbar.module.css';
+import gsap from 'gsap';
+import { React, useLayoutEffect, useRef } from "react"
+
 
 
 const Navbar = () => {
+    const nav = useRef(null)
+
+    useLayoutEffect(() => {
+        let ctx = gsap.context(() => {
+          const t2 = gsap.timeline()
+          t2.from(["#nav-container"], {
+              opacity: 0,
+              duration:2,
+            },0.2)
+        }, nav)
+        return () => ctx.revert()
+  }, [])
     return (
-        <div className={styles.container}>
-            <div className = {styles.navbar}>
+        <div className={styles.container} ref={nav} >
+            <div className = {styles.navbar} id="nav-container" >
                 <ul>
                     <li>
                         <Link

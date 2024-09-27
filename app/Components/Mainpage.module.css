@@ -9,6 +9,9 @@
     left:50%;
     transform: translate(-50%,-50%);
     text-align:center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     color: #fff
 }
 .text h2 {
@@ -18,5 +21,10 @@
 .text h1 {
     font-weight:700;
     font-size:6rem;
-    line-height: 0.88;
+    line-height: 1.2;
+}
+.text h3 {
+    line-height: 4;
+    font-weight: 400;
+    font-size:1.8rem;
 }
