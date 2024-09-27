@@ -1,0 +1,110 @@
+{
+    "SWE-projs": {
+		"ALP": {
+            "title": "African Library Project Portal",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        },
+        "ClipAnything": {
+            "title": "ClipAnything A/B Testing",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        },
+        "Wakey": {
+            "title": "Wakey | React Native Mobile App",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        },
+        "Bundle": {
+            "title": "Bundle",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        }
+    },
+    "ML-projs": {
+        "TryOnDiffusion": {
+            "title": "TryOnDiffusion",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        },
+        "StableDiffusionM": {
+            "title": "StableDiffusionM",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        },
+        "NJIT_CNN": {
+            "title": "Solar Physics",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        }
+    },
+    "AV-projs": {
+        "TSA": {
+            "title": "Transportation Systems Analysis",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        },
+        "FMCW": {
+            "title": "FMCW Lidar",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        },
+        
+        "Robotics": {
+            "title": "Robotics",
+            "date":"",
+            "imgLink":"",
+            "role":"",
+			"description": "",
+            "tools":"",
+            "githubLink":"",
+            "devpostLink":""
+        }
+    }
+
+}

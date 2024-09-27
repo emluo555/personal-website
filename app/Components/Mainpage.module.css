@@ -1,6 +1,10 @@
 .container {
     height:100vh;
-    border:1px solid red
+    background-image: url('../images/bg-gray-gradient.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .text {
     position: absolute;
