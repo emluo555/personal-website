@@ -13,8 +13,8 @@
         },
         
         "Wakey": {
-            "title": "Wakey | React Native Mobile App",
-            "date":"October 2023",
+            "title": "Wakey | Mobile App",
+            "date":"Oct. 2023",
             "imgLink":"/wakey.png",
             "role":"Mobile Dev @ HackHarvard",
 			"description": "Wakey brings human connection to alarm clocks. With Wakey, users and their peers can join the same alarm clock and send each other real-time sounds effects when the alarm goes off to wake up.",
@@ -25,7 +25,7 @@
         },
         "Bundle": {
             "title": "Bundle | Social Web App",
-            "date":"November 2022",
+            "date":"Nov. 2022",
             "imgLink":"/bundle.png",
             "role":"Frontend Dev @ HackPrinceton",
 			"description": "A simple and fun way to stay connected with friends! Quickly update your mood and send video messages, emotes, and GIFs to peers. On special days, send them a unique NFT :). Winner of Best Design / UXUI Hack",
@@ -59,7 +59,7 @@
             "otherLink":""
         },
         "NJIT_CNN": {
-            "title": "Predicting Solar Flare Indices using SHARP Parameters and Line-of-Sight Magnetogram Images",
+            "title": "Predicting Solar Flare Indices using SHARP Parameters and Line-of-Sight Magnetograms",
             "date":"Summer 2023",
             "imgLink":"/solar.png",
             "role":"ML & Solar Physics Research | National Science Foundation REU @ NJIT",
