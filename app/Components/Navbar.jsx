@@ -43,7 +43,7 @@ const Navbar = () => {
                             projects
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link
                             activeClass="active"
                             to="resume"
@@ -52,7 +52,7 @@ const Navbar = () => {
                             duration={500}>
                             resume
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
         </div>
         </div>

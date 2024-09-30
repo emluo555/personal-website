@@ -11,7 +11,6 @@
     padding-left:10% 
 }
 .text {
-
     /* transform: translate(-50%,-50%); */
     text-align:left;
     align-items: left;
@@ -41,4 +40,16 @@
     height:50vw;
     /* transform: translate(-50%,-50%); */
     color: #fff;
+}
+.icon_item {
+    filter: invert(90%);
+    padding-right: 3%;
+
+}
+.icon_item:hover{
+    color:white;
+    cursor:pointer;
+    filter: invert(40%);
+    transition: 0.2s;
+
 }

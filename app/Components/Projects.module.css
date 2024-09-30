@@ -2,7 +2,6 @@
     width: 80%;
     height: 90%;
     margin: auto;
-    border: 1px solid #5db996;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,28 +12,26 @@
     flex-wrap:wrap;
     justify-content: space-around;
     position:relative;
-    top:7%;
+    top:10%;
 }
 .project_item {
     flex: 0 1 calc(30% ); 
-    border:1px solid #5db996;
 }
 
 .projects h1 {
     font-size: 3rem;
     position:relative;
-    top:6%
+    top:11%
 }
 
 .button_grid {
     margin:1%;
     width:80%;
-    border:1px solid #96e3da;
     display:flex;
     justify-content: space-evenly;
     min-height:40px;
     position: relative;
-    top:5.5%
+    top:11.5%
 }
 
 
@@ -64,6 +61,7 @@
     flex-direction: column;
     align-items: center;
     text-align:center;
+    margin-top:10%;
 }
 .role {
     display: inline;
@@ -87,10 +85,12 @@
     overflow-y: scroll;
     margin-top: 3%;
     margin-bottom: 3%;
+    padding:0 3%;
 }
 .tools {
     font-style: italic;
     text-align: justify;
+    padding: 0 3% ;
 }
 .link_container {
     margin-top: 2%;

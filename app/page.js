@@ -19,7 +19,8 @@ export default function Home() {
       <Mainpage/>
 
       <Projects/>
-      <Resume/>
+      {/* <Resume/> */}
+      <div style={{height:"50px"}}></div>
     </div>
   );
 }

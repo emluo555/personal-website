@@ -12,7 +12,7 @@ import dynamic from 'next/dynamic';
 
 const Mainpage =()=>{
     const comp = useRef(null)
-    const words = ["a Software Developer & PM", "a Self-Driving Car Enthusiast", "a ML & AV Researcher", "a Hackathon Super Fan", "a Distance Runner & Dancer"]
+    const words = ["a Software Dev & PM", "a Self-Driving Car Enthusiast", "a ML & AV Researcher", "a Hackathon Fan", "a Distance Runner & Dancer"]
     gsap.registerPlugin(TextPlugin);
 
 
@@ -35,7 +35,13 @@ const Mainpage =()=>{
                 opacity: 0,
                 y: "+=100",
                 duration:1,},1.5
+              ).
+              from(["#icons"],{
+                opacity: 0,
+                y: "+=100",
+                duration:1,},1.8
               )
+
         }, comp)
         let ctx2 = gsap.context(()=> {
             gsap.to("#cursor",{
@@ -66,6 +72,17 @@ const Mainpage =()=>{
                 <h2 id="title-1">Hi! My name is</h2>
                 <h1 id="title-2">Emily Luo</h1>
                 <span id="title-3" style={{ display: "flex", width:"150%" }}><h3 >I am </h3><h3 id="animated-text" style={{marginLeft:"1%"}}></h3><h3 id="cursor">_</h3></span>
+                <div id="icons" className=''>
+                    <a href="https://github.com/emluo555" target="_blank">
+                    <img className={styles.icon_item} src='/github.png' alt="github" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/emily-luo04/" target="_blank">
+                    <img className={styles.icon_item} src='/linkedin.png' alt="linkedin" />
+                    </a>
+                    <a href="mailto:emilyluo555@gmail.com" target="_blank">
+                    <img className={styles.icon_item} src='/email.png' alt="email" />
+                    </a>
+              </div>
             </div>
             <div className={styles.splineContainer}id="splineview" >
             
