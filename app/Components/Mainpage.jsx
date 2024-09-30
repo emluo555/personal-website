@@ -12,11 +12,12 @@ import dynamic from 'next/dynamic';
 
 const Mainpage =()=>{
     const comp = useRef(null)
-    const words = ["a Software Dev & PM", "a Self-Driving Car Enthusiast", "a ML & AV Researcher", "a Hackathon Fan", "a Distance Runner & Dancer"]
+    const words = ["a Software Dev & PM", "a Self-Driving Car Enthusiast", "an ML & AV Researcher", "a Hackathon Fan", "a Distance Runner & Dancer"]
     gsap.registerPlugin(TextPlugin);
 
 
     useLayoutEffect(() => {
+      
         let ctx = gsap.context(() => {
           const t1 = gsap.timeline()
           t1.from(["#title-1"], {
@@ -54,7 +55,7 @@ const Mainpage =()=>{
             let t2 = gsap.timeline({repeat: -1, delay:1.8})
             words.forEach((word)=> {
                 let t2Text = gsap.timeline({repeat: 1, yoyo:true});
-                t2Text.to('#animated-text',{duration:2, text:word});
+                t2Text.to('#animated-text',{duration:1.7, text:word});
                 t2.add(t2Text)
             })
         })
@@ -71,7 +72,7 @@ const Mainpage =()=>{
             <div className={styles.text}>
                 <h2 id="title-1">Hi! My name is</h2>
                 <h1 id="title-2">Emily Luo</h1>
-                <span id="title-3" style={{ display: "flex", width:"150%" }}><h3 >I am </h3><h3 id="animated-text" style={{marginLeft:"1%"}}></h3><h3 id="cursor">_</h3></span>
+                <span id="title-3" style={{ display: "flex", width:"150%" }}><h3 >I am</h3><h3 id="animated-text" style={{marginLeft:"6px"}}></h3><h3 id="cursor">_</h3></span>
                 <div id="icons" className=''>
                     <a href="https://github.com/emluo555" target="_blank">
                     <img className={styles.icon_item} src='/github.png' alt="github" />

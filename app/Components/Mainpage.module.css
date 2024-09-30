@@ -11,7 +11,6 @@
     padding-left:10% 
 }
 .text {
-    /* transform: translate(-50%,-50%); */
     text-align:left;
     align-items: left;
     display: flex;
@@ -22,6 +21,7 @@
 .text h2 {
     font-weight:100;
     font-size: 3rem;
+    opacity: 100;
 }
 .text h1 {
     font-weight:700;

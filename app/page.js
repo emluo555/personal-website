@@ -20,7 +20,7 @@ export default function Home() {
 
       <Projects/>
       {/* <Resume/> */}
-      <div style={{height:"50px"}}></div>
+      
     </div>
   );
 }

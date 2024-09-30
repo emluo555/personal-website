@@ -4,7 +4,6 @@ import styles from './Projects.module.css';
 import Image from "next/image";
 
 const ProjectCard =({title, imgLink, date, role, description, tools, githubLink, devpostLink, otherLink})=>{
-    console.log((imgLink))
     return(
         <div className={styles.pjc_container}>
             <img src={imgLink} width={"90%"}  ></img>

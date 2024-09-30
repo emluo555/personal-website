@@ -75,7 +75,7 @@ const Projects =()=>{
                 <div ref={contentRef} className = {`animate ${styles.projects_container}` }>
                 {currButton == 0 && 
                     Object.entries(swe).map(([key, project]) => (
-                        <div className = {styles.project_item}><ProjectCard
+                        <div className = {styles.project_item} key={key}><ProjectCard
                           key={key}
                           title={project.title}
                           date={project.date}
@@ -122,6 +122,7 @@ const Projects =()=>{
 
                 
             </div>
+            <div style={{height:"200px"}}></div>
         </div>
     )
     }
