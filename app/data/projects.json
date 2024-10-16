@@ -3,7 +3,7 @@
 		"ALP": {
             "title": "African Library Project Portal",
             "date":"2023-2024",
-            "imgLink":"/alp.png",
+            "imgLink":"alp",
             "role":"Full Stack Dev & Product Manager",
 			"description": "The African Library Project Portal connects & boosts community of the volunteers and admin of the ALP nonprofit, allowing them to track their book drive progress, real-time chat with each other and post via a social forum, view their standings in a leaderboard, and personalize their volunteer profile.",
             "tools":"React.js, Next.js, Express, MongoDB, socketIO, TypeScript",
@@ -15,7 +15,7 @@
         "Wakey": {
             "title": "Wakey | Mobile App",
             "date":"Oct. 2023",
-            "imgLink":"/wakey.png",
+            "imgLink":"wakey",
             "role":"Mobile Dev @ HackHarvard",
 			"description": "Wakey brings human connection to alarm clocks. With Wakey, users and their peers can join the same alarm clock and send each other real-time sounds effects when the alarm goes off to wake up.",
             "tools":"React Native, socketIO, Javascript, Supabase",
@@ -26,7 +26,7 @@
         "Bundle": {
             "title": "Bundle | Social Web App",
             "date":"Nov. 2022",
-            "imgLink":"/bundle.png",
+            "imgLink":"bundle",
             "role":"Frontend Dev @ HackPrinceton",
 			"description": "A simple and fun way to stay connected with friends! Quickly update your mood and send video messages, emotes, and GIFs to peers. On special days, send them a unique NFT :). Winner of Best Design / UXUI Hack",
             "tools":"Javascript, Node.JS, HTML/CSS, socketIO, Flask",
@@ -39,7 +39,7 @@
         "TryOnDiffusion": {
             "title": "TryOnFull: A Modification of TryOnDiffusion",
             "date":"April-May 2024",
-            "imgLink":"/tryon.png",
+            "imgLink":"tryon",
             "role":"Neural Networks Research",
 			"description": "This research introduces TryOnFull, a modification of TryOnDiffusion, to generate a 'virtual fitting room' experience that includes both upper & lower body garments using a diffusion-based approach. With minimal architectural changes, TryOnFull shows promising results for generating recognizable full-body images. Future work aims to enhance garment detail and resolution while maintaining an efficient training process.",
             "tools":"PyTorch, Python Image Preprocessing, Diffusion Models, GPU Computing, SLURM",
@@ -50,7 +50,7 @@
         "StereoDiffusionM": {
             "title": "StereoDiffusionM: Diffusion Stereo Image Generation using Marigold Depth Estimation",
             "date":"April-May 2024",
-            "imgLink":"/stereo.png",
+            "imgLink":"stereo",
             "role":"Computer Vision Research",
 			"description": "StereoDiffusionM enhances stereo image generation by modifying the depth model and hyperparameters in the StereoDiffusion pipeline. By integrating the Marigold depth model, the approach improves depth accuracy, particularly for background elements, leading to more precise stereo image generation. My paper also discusses the benefits and tradeoffs of this implementation, focusing on image-to-stereo generation.",
             "tools":"Python, PyTorch, Diffusion Models, GPU Computing, SLURM",
@@ -61,7 +61,7 @@
         "NJIT_CNN": {
             "title": "Predicting Solar Flare Indices using SHARP Parameters and Line-of-Sight Magnetograms",
             "date":"Summer 2023",
-            "imgLink":"/solar.png",
+            "imgLink":"solar",
             "role":"ML & Solar Physics Research | National Science Foundation REU @ NJIT",
 			"description": "This research aimed to improve the prediction accuracy of high-class solar flares, particularly M and X class flares, which can trigger significant coronal mass ejections (CMEs) affecting Earth. We utilized SHARP parameter data and Line-of-Sight Magnetogram images from 2010-2017, balancing the dataset with Generative Adversarial Networks (GANs) to address data imbalance. Various machine learning models, including a Transformer for time-series data, were tested and compared to previous models to enhance prediction results.",
             "tools":"Python, scikit-learn, PyTorch, Excel, Python Data Analysis",
@@ -74,7 +74,7 @@
         "TSA": {
             "title": "Transportation Systems Analysis",
             "date":"Fall'24 - Spring'25, In Progress",
-            "imgLink":"/orf.png",
+            "imgLink":"orf",
             "role":"",
 			"description": "Examining transportation from both the tech & policy planning perspectives; analyzing case studies for autonomous vehicle systems, GPS-based route guidance, Production & Attraction traffic density, etc. The goal is to provide practical insights into the planning and decision-making processes within the industry.",
             "tools":"Systems Analysis, Excel, Current News Synthesis",
@@ -85,7 +85,7 @@
         "FMCW": {
             "title": "FMCW LIDAR Research",
             "date":"Fall'24 - Spring'25, In Progress",
-            "imgLink":"/pcis.png",
+            "imgLink":"pcis",
             "role":"Princeton Computational Imaging Lab",
 			"description": "Conducting research on FMCW LIDAR techniques for self-driving vehicles' depth estimation systems, focusing on examining affects of difficult weather conditions on sensor perception.",
             "tools":"Python, Imaging",
@@ -97,7 +97,7 @@
         "Robotics": {
             "title": "Intro to Robotics",
             "date":"Fall'24, In Progress",
-            "imgLink":"/irom.png",
+            "imgLink":"irom",
             "role":"",
 			"description": "Learning theoretical and algorithmic principles behind robotic systems, with topics such as motion planning, control, localization, mapping, and vision. Working with quadrotor drones to be able to eventually implement a vision-based obstacle avoidance controller.",
             "tools":"Theory, Python, Drone Lab",
@@ -109,7 +109,7 @@
     "ClipAnything": {
             "title": "ClipAnything A/B Testing",
             "date":"Summer 2024",
-            "imgLink":"/clipanything.png",
+            "imgLink":"clipanything",
             "role":"AI PM Intern @ OpusClip",
 			"description": "",
             "tools":"Data Analysis, Prompt Engineering, Agile Development",
