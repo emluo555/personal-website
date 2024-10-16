@@ -1,12 +1,14 @@
 "use client"
 import React, {useState} from 'react';
 import styles from './Projects.module.css';
-import Image from "next/image";
+import alp from "../../public/alp.png"
+
 
 const ProjectCard =({title, imgLink, date, role, description, tools, githubLink, devpostLink, otherLink})=>{
+    console.log(alp)
     return(
         <div className={styles.pjc_container}>
-            <img src={imgLink} width={"90%"}  ></img>
+            <img src={alp.src} width={"90%"}  ></img>
             <h1 style={{fontSize:'140%', marginTop:'3%'}}>{title}</h1>
             {role != "" ? <span style={{display:'inline'}}><p className={styles.role}>{role}, </p><p className={styles.date}>{date}</p></span>
             :  <span style={{display:'inline'}}><p className={styles.date}>{date}</p></span>}
