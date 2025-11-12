@@ -1,5 +1,17 @@
 {
     "SWE_projs": {
+        "AWS": {
+            "title": "Amazon Web Services",
+            "date":"Summer 2025",
+            "imgLink":"",
+            "role":"Software Development Intern",
+			"description": "Interned on the AWS Transcribe team, where I built and deployed a new job scheduler system using AWS services that reduced average customer wait times during \"noisy neighbor\" traffic events by 70%. ",
+            "tools":"Java, AWS Lambda, AWS Simple Queue Service, CloudWatch, DynamoDB, AWS Throttling",
+            "githubLink":"",
+            "devpostLink":"",
+            "otherLink":"",
+            "startDate": "2025-11-11"
+        },
 		"ALP": {
             "title": "African Library Project Portal",
             "date":"2023-2024",
@@ -9,7 +21,20 @@
             "tools":"React.js, Next.js, Express, MongoDB, socketIO, TypeScript",
             "githubLink":"https://github.com/Hack4Impact-Princeton/alp-portal",
             "devpostLink":"",
-            "otherLink":""
+            "otherLink":"",
+            "startDate": "2025-11-10"
+        },
+        "OpusClip": {
+            "title": "OpusClip",
+            "date":"Summer 2024",
+            "imgLink":"clip",
+            "role":"AI Product Management Intern",
+			"description": "OpusClip is a start-up that uses AI to turn long form videos into short form clips. As a PM Intern, I focused on the launch of ClipAnything, analyzing data from 5K+ users during our initial beta phase to convert into actionable changes. I also conducted systematic prompt engineering to improve the output quality of ClipAnything's Judge LLM. Towards the end of the internship, I led the sunset plan of the legacy video editing platform, setting the timelines and writing emails to existing users.",
+            "tools":"Agile Development, Data Analysis, Documentation, Prompt Engineering",
+            "githubLink":"",
+            "devpostLink":"",
+            "otherLink":"https://www.opus.pro/clipanything",
+            "startDate": "2025-11-10"
         },
         
         "Wakey": {
@@ -21,7 +46,8 @@
             "tools":"React Native, socketIO, Javascript, Supabase",
             "githubLink":"https://github.com/Need-a-taco/Wakey",
             "devpostLink":"https://devpost.com/software/wakey",
-            "otherLink":""
+            "otherLink":"",
+            "startDate": "2025-11-08"
         },
         "Bundle": {
             "title": "Bundle | Social Web App",
@@ -32,10 +58,47 @@
             "tools":"Javascript, Node.JS, HTML/CSS, socketIO, Flask",
             "githubLink":"https://github.com/derekgeng15/HackPrinceton22",
             "devpostLink":"https://devpost.com/software/bundle-6peq3f",
-            "otherLink":""
+            "otherLink":"",
+            "startDate": "2025-11-07"
         }
     },
     "ML_projs": {
+        "MLLM": {
+            "title": "Senior Thesis: Investigating Attention in Reasoning v.s Non-Reasoning Vision Language Models",
+            "date":"Fall 2025 - Spring 2026 [In Progress]",
+            "imgLink":"",
+            "role":"",
+			"description": "Conducting research in Professor Zhuang Liu's Lab, implementing custom attention visualization pipelines in PyTorch to compare token-to-vision cross-attention in reasoning vs. non-reasoning VLMs for robotics Q&A datasets",
+            "tools":"Python, PyTorch, VLMS, Transformers, GPU Computing",
+            "githubLink":"",
+            "devpostLink":"",
+            "otherLink":"",
+            "startDate": "2025-11-12"
+        },
+        "NLP": {
+            "title": "Extending Emergent Misalignment",
+            "date":"April - May 2025",
+            "imgLink":"",
+            "role":"NLP Research",
+			"description": "Explored how large language models can become misaligned during fine-tuning by replicating and extending experiments from Betley et al. I finetuned and evaluated models like GPT-4o, Qwen, and LLaMA across multiple languages, and designed a custom realignment test pipeline using the OpenAI API to analyze behavioral shifts.",
+            "tools":"Python, PyTorch, LoRA Fine-tuning",
+            "githubLink":"https://github.com/emluo555/nlp-emergent-misalignment",
+            "devpostLink":"",
+            "otherLink":"",
+            "startDate": "2025-11-11"
+        },
+        "CamBEV+": {
+            "title": "CamBEV+: Birds-Eye-View Images for Night-Time Autonomous Driving ",
+            "date":"Jan - May 2025",
+            "imgLink":"",
+            "role":"Undergraduate Research (Advised by Prof. Olga Russakovsky)",
+			"description": "Expanding on the BEVCar paper, built a surround view camera to bird's-eye-view perception pipeline aimed at improving autonomous driving specifically in low-light conditions. I integrated image enhancement models like MIRNet and glare reduction techniques to boost visibility and evaluated object detection and map segmentation performance on the nuScenes dataset.",
+            "tools":"Python, PyTorch, MIRNet, OpenCV, nuScenes Dataset",
+            "githubLink":"https://github.com/emluo555/CamToBEV",
+            "devpostLink":"",
+            "otherLink":"",
+            "startDate": "2025-11-11"
+        },
         "TryOnDiffusion": {
             "title": "TryOnFull: A Modification of TryOnDiffusion",
             "date":"April-May 2024",
@@ -45,7 +108,8 @@
             "tools":"PyTorch, Python Image Preprocessing, Diffusion Models, GPU Computing, SLURM",
             "githubLink":"https://github.com/emluo555/tryondiffusion2.0",
             "devpostLink":"",
-            "otherLink":""
+            "otherLink":"",
+            "startDate": "2025-11-10"
         },
         "StereoDiffusionM": {
             "title": "StereoDiffusionM: Diffusion Stereo Image Generation using Marigold Depth Estimation",
@@ -56,7 +120,8 @@
             "tools":"Python, PyTorch, Diffusion Models, GPU Computing, SLURM",
             "githubLink":"https://github.com/emluo555/StereoDiffusionM",
             "devpostLink":"",
-            "otherLink":""
+            "otherLink":"",
+            "startDate": "2025-11-10"
         },
         "NJIT_CNN": {
             "title": "Predicting Solar Flare Indices using SHARP Parameters and Line-of-Sight Magnetograms",
@@ -67,55 +132,61 @@
             "tools":"Python, scikit-learn, PyTorch, Excel, Python Data Analysis",
             "githubLink":"",
             "devpostLink":"",
-            "otherLink":"https://centers.njit.edu/spaceweather/"
+            "otherLink":"https://centers.njit.edu/spaceweather/",
+            "startDate": "2025-11-08"
         }
     },
     "AV_projs": {
+        "MolmoAct": {
+            "title": "Automatic Steering for MolmoAct using Trajectory Optimization",
+            "date":"Fall 2025 [In Progress]",
+            "imgLink":"",
+            "role":"",
+			"description": "Integrating trajectory optimization methods to refine motion planning capabilities of MolmoAct, a new robotics foundation model. We're evaluating on simulation environments like LIBERO and SimplerENV",
+            "tools":"Action Reasoning Models, Traj Opt, iLQR, Simulation",
+            "githubLink":"",
+            "devpostLink":"",
+            "otherLink":"",
+            "startDate": "2025-11-12"
+        },
+        "ECE346": {
+            "title": "Intelligent Robotic Systems: Truck Lab",
+            "date":"April - May 2025",
+            "imgLink":"",
+            "role":"",
+			"description": "Programmed an autonomous mini-truck to navigate a predefined path and avoid obstacles using the Iterative Linear Quadratic Regulator (ILQR) algorithm within the ROS framework. Designed and integrated a real-time safety filter that dynamically adjusted or overrode unsafe trajectories based on ILQR cost evaluations.",
+            "tools":"Python, ROS, ILQR, RViz",
+            "githubLink":"",
+            "devpostLink":"",
+            "otherLink":"",
+            "startDate": "2025-11-11"
+        },
         "TSA": {
             "title": "Transportation Systems Analysis",
-            "date":"Fall'24 - Spring'25, In Progress",
+            "date":"Fall 2024",
             "imgLink":"orf",
             "role":"",
-			"description": "Examining transportation from both the tech & policy planning perspectives; analyzing case studies for autonomous vehicle systems, GPS-based route guidance, Production & Attraction traffic density, etc. The goal is to provide practical insights into the planning and decision-making processes within the industry.",
+			"description": "Examined transportation from both the tech & policy planning perspectives; analyzed case studies for autonomous vehicle systems, GPS-based route guidance, Production & Attraction traffic density, etc. The goal is to provide practical insights into the planning and decision-making processes within the industry.",
             "tools":"Systems Analysis, Excel, Current News Synthesis",
             "githubLink":"",
             "devpostLink":"",
-            "otherLink":""
-        },
-        "FMCW": {
-            "title": "FMCW LIDAR Research",
-            "date":"Fall'24 - Spring'25, In Progress",
-            "imgLink":"pcis",
-            "role":"Princeton Computational Imaging Lab",
-			"description": "Conducting research on FMCW LIDAR techniques for self-driving vehicles' depth estimation systems, focusing on examining affects of difficult weather conditions on sensor perception.",
-            "tools":"Python, Imaging",
-            "githubLink":"",
-            "devpostLink":"",
-            "otherLink":""
+            "otherLink":"",
+            "startDate": "2025-11-10"
         },
         
         "Robotics": {
             "title": "Intro to Robotics",
-            "date":"Fall'24, In Progress",
+            "date":"Fall 2024",
             "imgLink":"irom",
             "role":"",
-			"description": "Learning theoretical and algorithmic principles behind robotic systems, with topics such as motion planning, control, localization, mapping, and vision. Working with quadrotor drones to be able to eventually implement a vision-based obstacle avoidance controller.",
-            "tools":"Theory, Python, Drone Lab",
+			"description": "Learned theoretical and algorithmic principles behind robotic systems, with topics such as motion planning, control, localization, mapping, and vision. Implemented vision-based obstacle avoidance on Crazyflie drones.",
+            "tools":"Classical Planning, Python, OpenCV, Drones",
             "githubLink":"",
             "devpostLink":"",
-            "otherLink":""
+            "otherLink":"",
+            "startDate": "2025-11-10"
         }
-    },
-    "ClipAnything": {
-            "title": "ClipAnything A/B Testing",
-            "date":"Summer 2024",
-            "imgLink":"clipanything",
-            "role":"AI PM Intern @ OpusClip",
-			"description": "",
-            "tools":"Data Analysis, Prompt Engineering, Agile Development",
-            "githubLink":"",
-            "devpostLink":"",
-            "otherLink":"https://www.opus.pro/clipanything"
-        }
+    }
+    
 
 }

@@ -10,12 +10,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 const Projects =()=>{
-    const [currButton, setCurrButton]= useState(0)
+    const [currButton, setCurrButton]= useState('all')
     const contentRef = useRef(null)
 
     const swe = data.SWE_projs
     const ML = data.ML_projs
     const AV = data.AV_projs
+
+    const getAllProjects = () => {
+      const allProjects = [];
+      Object.entries(swe).forEach(([key, project]) => {
+        allProjects.push({ ...project, key: `swe-${key}`, category: 'Software Dev & Product' });
+      });
+      Object.entries(ML).forEach(([key, project]) => {
+        allProjects.push({ ...project, key: `ml-${key}`, category: 'ML Research' });
+      });
+      Object.entries(AV).forEach(([key, project]) => {
+        allProjects.push({ ...project, key: `av-${key}`, category: 'Autonomous Vehicles' });
+      });
+
+      // sort by date
+      return allProjects.sort((a, b) => {
+        const dateA = new Date(a.startDate);
+        const dateB = new Date(b.startDate);
+        return dateB - dateA;
+      });
+    };
 
     const projectsRef = useRef(null);
 
@@ -55,72 +75,76 @@ const Projects =()=>{
     }
   };
 
+  const renderProjects = () => {
+    
+    if (currButton === "all") {
+      return getAllProjects().map((project) => {
+        const { key, ...projectProps } = project; // Destructure to separate key from other props
+        return (
+          <div key={key} style={{ marginBottom: '1.5rem' }}>
+            <ProjectCard {...projectProps} />
+          </div>
+        );
+      });
+    }
+    //   return getAllProjects().map((project) => (
+    //     <div key={project.key} style={{ marginBottom: '1.5rem' }}>
+    //       <ProjectCard {...project} />
+    //     </div>
+    //   ));
+    // }
+    if (currButton === 'swe') {
+      return Object.entries(swe).map(([key, project]) => (
+        <div key={key} style={{ marginBottom: '1.5rem' }}>
+          <ProjectCard {...project} />
+        </div>
+      ));
+    }
+
+    if (currButton === 'ml') {
+      return Object.entries(ML).map(([key, project]) => (
+        <div key={key} style={{ marginBottom: '1.5rem' }}>
+          <ProjectCard {...project} />
+        </div>
+      ));
+    }
+
+    if (currButton === 'av') {
+      return Object.entries(AV).map(([key, project]) => (
+        <div key={key} style={{ marginBottom: '1.5rem' }}>
+          <ProjectCard {...project} />
+        </div>
+      ));
+    }
+  }
+
     return(
         <div ref={projectsRef} className="container" id="projects" style={{height:"100vh"}}>
             <div className={`animate ${styles.projects}`}>
                 <h1>PROJECTS</h1>
                 <div className={`animate ${styles.button_grid}`}>
-                    <button onClick={()=>handleButtonClick(0)}>
+                  <button onClick={()=>handleButtonClick('all')}
+                    className={currButton === 'all' ? styles.selected : ''}>
+                        All
+                    </button>
+                    <button onClick={()=>handleButtonClick('swe')}
+                      className={currButton === 'swe' ? styles.selected : ''}>
                         Software Dev & Product
                     </button>
-                    <button onClick={()=>handleButtonClick(1)}>
+                    <button onClick={()=>handleButtonClick('ml')}
+                      className={currButton === 'ml' ? styles.selected : ''}>
                         ML Research
                     </button>
-                    <button onClick={()=>handleButtonClick(2)}>
-                        Autonomous Vehicles
+                    <button onClick={()=>handleButtonClick('av')}
+                      className={currButton === 'av' ? styles.selected : ''}>
+                        Robotics
                     </button>
                     {/* <Image src={require('../alp.png')} /> */}
 
                 </div>
                 <div ref={contentRef} className = {`animate ${styles.projects_container}` }>
-                {currButton == 0 && 
-                    Object.entries(swe).map(([key, project]) => (
-                        <div className = {styles.project_item} key={key}><ProjectCard
-                          key={key}
-                          title={project.title}
-                          date={project.date}
-                          imgLink={project.imgLink}
-                          role={project.role}
-                          description={project.description}
-                          tools={project.tools}
-                          githubLink={project.githubLink}
-                          devpostLink={project.devpostLink}
-                          otherLink={project.otherLink}
-                        /></div>
-                      ))}
-                    {currButton == 1 && 
-                    Object.entries(ML).map(([key, project]) => (
-                        <div className = {styles.project_item}><ProjectCard
-                          key={key}
-                          title={project.title}
-                          date={project.date}
-                          imgLink={project.imgLink}
-                          role={project.role}
-                          description={project.description}
-                          tools={project.tools}
-                          githubLink={project.githubLink}
-                          devpostLink={project.devpostLink}
-                          otherLink={project.otherLink}
-                        /></div>
-                      ))}
-                    {currButton == 2 && 
-                    Object.entries(AV).map(([key, project]) => (
-                        <div className = {styles.project_item}><ProjectCard
-                          key={key}
-                          title={project.title}
-                          date={project.date}
-                          imgLink={project.imgLink}
-                          role={project.role}
-                          description={project.description}
-                          tools={project.tools}
-                          githubLink={project.githubLink}
-                          devpostLink={project.devpostLink}
-                          otherLink={project.otherLink}
-                        /></div>
-                      ))}
+                  {renderProjects()}  
                 </div>
-
-                
             </div>
             <div style={{height:"200px"}}></div>
         </div>
